@@ -74,5 +74,10 @@ mongoose.connect('mongodb://localhost:27017/inventorydb',
 // Inventory Route
 app.use('/inventory', require('./routes/inventoryRouter'));
 
+//extra step, the original route, put on search bar localhost9000/  hit enter you will see Hellooo, Mike on the web page
+app.get('/',(req, res) => {
+    res.send("Hellooo, Mike");
+});
+
 // App Set To Listen
 app.listen(9000, () => console.log('Server Is Listening On Port 9000'));
