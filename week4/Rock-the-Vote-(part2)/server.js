@@ -87,8 +87,7 @@ app.use(express.json());
 app.use(morgan("dev")); 
 
 // create connection to the Database
-mongoose.connect(
-  "mongodb://localhost:27017/voter-list-db",
+mongoose.connect("mongodb://localhost:27017/voter-list-db",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -98,7 +97,7 @@ mongoose.connect(
   () => console.log("Connected to the voter-DB")// u will see this message in nodemon once u get connectd
 );
 
-// //Routes
+// Routes
 app.use('/auth', require('./routes/authRouter.js'))
 app.use('/api', expressJwt({secret: process.env.SECRET, algorithms: ["HS256"]}))
 app.use('/user', require('./routes/userRouter.js'))
