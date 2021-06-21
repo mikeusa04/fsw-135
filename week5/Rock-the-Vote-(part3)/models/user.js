@@ -6,20 +6,30 @@ const userSchema = new Schema({
     
   username: {
     type: String,
-    required: true
+    required: true,
+    lowercase: true,
+    unique: true
   },
   password: {
     type: String,
     required: true
-  }
+  },
+  memberSince: {
+    type: Date,
+    default: Date.now
+},
 
+isAdmin:{
+    type: Boolean,
+    default: false
+}
 })
 
 // this function is to to encrypt password 
 userSchema.pre("save", function(next) {
   const user = this
   if(!user.isModified("password")) return next() 
-  bcrypt.hash(user.password, 7, (err, hash) => {
+  bcrypt.hash(user.password, 8, (err, hash) => {
       if(err) return next(err)
       user.password = hash
       next()

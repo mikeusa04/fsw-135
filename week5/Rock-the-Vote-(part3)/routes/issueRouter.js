@@ -23,13 +23,15 @@ issueRouter.get('/', (req, res, next) => {
           return res.status(201).send(issue)
     })})
 
-  //Post
-  issueRouter.post("/", (req, res, next) => {
+
+// Post
+issueRouter.post("/", (req, res, next) => {
+    req.body.userID = req.user._id
     const newIssue = new Issue(req.body)
     newIssue.save((err, savedIssue) => {
         if(err){
             res.status(500)
-            return next (err)
+            return next(err)
         }
         return res.status(201).send(savedIssue)
     })
