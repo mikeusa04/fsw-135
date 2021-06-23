@@ -1,0 +1,138 @@
+body {
+    text-align: center;
+    /*background-image: url(./images/issue-bubble.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Fascinate', cursive;
+    min-width: 900px;
+    min-height: 1000px;
+}
+
+.auth-button {
+   /*background-image:url(./images/login-button.png);*/
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   font-weight: bolder;
+}
+
+.auth-button:hover{
+    box-shadow: 3px 5px 10px pink;
+}
+
+.navbar {
+    padding: 55px;
+    text-align: center;
+}
+
+.link {
+    text-align: right;
+    margin: 10px;
+    font-size: 26px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.link:hover {
+    font-size: 26px;
+    color: white;
+    text-decoration: underline;
+}
+
+.logout-button {
+    /*background-image: url(./images/logout.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+.logout-button:hover{
+    box-shadow: 5px 6px 10px black;
+}
+
+.sign-in-link {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sign-in-link:hover {
+    color: blue;
+    font-size: 40px;
+}
+
+.create-acct-link {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.create-acct-link:hover {
+    color: blue;
+    font-size: 40px;
+}
+
+.user-form {
+    padding: 5px;
+}
+
+input {
+    margin: 15px;
+    width: 120px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input:hover {
+    box-shadow: 5px 6px 10px pink;
+}
+
+.issue-button {
+    border-radius: 50px;
+    /*background-image: url(./images/button-logo.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+}
+
+.issue-button:hover {
+    box-shadow: 2px 3px 5px pink;
+}
+
+.comment-container {
+    margin: 15px;
+    padding: 15px;
+}
+
+.likes{
+    font-size:20px;
+    background-color:red;
+}
+
+.dislikes{
+    font-size:20px;
+    background-color:red ;
+}
+
+.comment-button {
+    /*background-image: url(./images/comment-button.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.comment-button:hover {
+    box-shadow: 2px 3px 5px pink;
+}
+.comment-list{
+    border:5px solid black;
+}
