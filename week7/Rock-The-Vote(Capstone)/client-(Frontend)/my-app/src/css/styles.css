@@ -1,0 +1,299 @@
+/* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    outline: none;
+    text-decoration: none;
+    background-color: rgb(200, 218, 240);
+  }
+  
+  .app {
+    background-color: #eee9;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color: #3339;
+  }
+  
+  .auth-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .auth-container > h1 {
+    font-size: 2em;
+    margin: 24px;
+  }
+  
+  .auth-container > p {
+    margin: 16px;
+    text-decoration: underline;
+  }
+  
+  .auth-container > form {
+    border: 1px solid #3339;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #aaa9;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-container > form > input {
+    margin: 16px 8px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .auth-container > form > button {
+    margin: 16px 8px;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .todo-list {
+  
+  }
+  
+  .todo {
+  
+  }
+  
+  .public {
+    height: 100vh;
+  }
+  
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .profile > h1 {
+    margin: 8px;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  .profile > h3 {
+    margin: 16px 0;
+    text-decoration: underline;
+  }
+  
+  .profile > form {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    border: 1px solid #3339;
+    background-color: #aaa9;
+    padding: 16px;
+    border-radius: 5px
+  }
+  
+  .profile > form > input,
+  .profile > form > button {
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 5px
+  }*/
+
+
+* {
+    padding: 0px;
+    margin: 5px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBtn {
+    border-radius: 5px;
+    color: black;
+    background-color: rgb(224, 222, 222);
+}
+
+.authHeader {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.authGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.auth-container {
+    grid-column: 2/3;
+    background-color: rgba(128, 128, 128, 0.565);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.authForm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.userName {
+    background-color: white;
+    color: black;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.password {
+    background-color: white;
+    color: black;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.submitBtn {
+    background-color: white;
+    color: black;
+    grid-column: 2/3;
+}
+
+.errMsg {
+    grid-column: 2/3;
+    background-color: red;
+    color: whitesmoke;
+    text-align: "center";
+}
+
+.toggle {
+    background-color: white;
+    color: black;
+}
+
+.addHeader {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.publicIssue {
+    border: 1px grey solid;
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.publicIssueGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profileUserName {
+    grid-column: 2/3;
+    border-radius: 5px;
+    text-decoration: underline;
+    text-align: center;
+    color: black;
+    background-color: rgba(128, 128, 128, 0.538);
+}
+
+.formGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.userIssues {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.issueForm {
+    border-radius: 5px;
+    grid-column: 2/3;
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.51);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.issueInputTitle {
+    grid-column: 2/4;
+}
+
+.issueInputDesc {
+    grid-column: 2/4;
+}
+
+.issueInputImg {
+    grid-column: 2/4;
+}
+
+.subIssueBtn {
+    grid-column: 2/4;
+}
+
+.issueGrid {
+    grid-column: 2/3;
+}
+
+.issue {
+    border-radius: 5px;
+    margin: 15px;
+    background-color: rgba(128, 128, 128, 0.503);
+    grid-column: 2/3;
+    border: grey 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.issueInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.publicIssues {
+    text-align: center;
+}
+
+.publicIssue {
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.469);
+    margin: 15px;
+}
+
+.issueTitle {
+    text-decoration: underline;
+}
